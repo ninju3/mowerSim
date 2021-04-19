@@ -10,7 +10,7 @@ then run:
 
 And then you can run a simulation with the app/main.py script.
 
-You need an input file as a parameter, but you use the one made for test located in tests/io_files
+You need an input file as a parameter, but you can use the one made for test located in tests/io_files
 
 example:
 `./app/main.py tests/io_files/TC2_input`
