@@ -5,6 +5,7 @@ Clone the current git project on your machine
 then run:
 
 `docker build --tag mower-sim .`
+
 `docker run -it mower-sim bash`
 
 And then you can run a simulation with the app/main.py script.
