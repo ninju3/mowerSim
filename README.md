@@ -1,5 +1,19 @@
 ## Getting started
 
+Clone the current git project on your machine
+
+then run:
+
+`docker build --tag mower-sim .`
+`docker run -it mower-sim bash`
+
+And then you can run a simulation with the app/main.py script.
+
+You need an input file as a parameter, but you use the one made for test located in tests/io_files
+
+example:
+`./app/main.py tests/io_files/TC2_input`
+
 ## Testing
 
 I have identify 4 use cases for the program and implemented functional tests for them. They are located in /tests/test_main.py
@@ -19,7 +33,9 @@ You can run the tests by using the command:
 
 ## Algorythm
 
-Mowers moves are computed independentlty, on multiple processes, and they use a shared 1 dimensional array of boleans, to keep track of the availabilty of each cell of the lawn grid
+Mowers moves are computed independentlty, on multiple processes, and they use a shared 1 dimensional array of boleans, to keep track of the availabilty of each cell of the lawn grid.
+
+As we are mainly using indexes to modify the shared array, the complexity of the algorythm is low.
 
 ## Improvements
 
